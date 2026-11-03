@@ -1,0 +1,51 @@
+# Initial Project Request – YottaFlex Data Engineering Pipeline
+
+## Project Objective
+
+Build a complete, runnable, beginner-friendly Data Engineering project named **YottaFlex – E-commerce Order Data Pipeline**.
+
+The objective was to demonstrate an end-to-end data engineering workflow using Python, Pandas, and CSV files.
+
+## Requirements
+
+The pipeline should:
+
+- Ingest e-commerce order data from incoming CSV files.
+- Store original data in a Raw layer.
+- Validate records against predefined business rules.
+- Separate valid and invalid records.
+- Store invalid records in a Quarantine layer with rejection reasons.
+- Transform and deduplicate validated records.
+- Store final cleaned data in a Curated layer.
+- Support incremental processing and duplicate file delivery.
+- Handle late-arriving and out-of-order data.
+- Generate pipeline execution metrics and data quality reports.
+- Maintain logs for monitoring and troubleshooting.
+
+## Expected Deliverables
+
+1. Complete Python source code.
+2. Configuration files.
+3. Sample input datasets.
+4. Large dataset generator.
+5. Automated test cases.
+6. Generated pipeline outputs.
+7. Documentation and architecture explanation.
+8. Setup and execution instructions.
+9. GitHub-ready project structure.
+10. Prompt history documentation.
+
+## Development Priorities
+
+- Correctness
+- Maintainability
+- Readability
+- Idempotency
+- Data quality
+- Error handling
+- Testing
+- Observability
+
+## Target Skill Level
+
+The project should be appropriate for a Data Engineer with 0–3 years of experience and should be easy to explain during technical interviews.
