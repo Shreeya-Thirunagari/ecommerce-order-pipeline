@@ -1,0 +1,41 @@
+# Local-first data pipeline configuration
+# Paths are relative to project root unless absolute
+
+paths:
+  raw: data/raw
+  validated: data/validated
+  curated: data/curated
+  quarantine: data/quarantine
+  sample: data/sample
+  state: data/state          # for processed-file manifest (idempotency)
+  logs: data/logs
+
+# Ingestion
+ingestion:
+  supported_extensions: [".csv"]
+  encoding: utf-8
+
+# Validation & business rules
+validation:
+  allowed_currencies: ["USD", "EUR", "GBP", "INR"]
+  allowed_statuses: ["pending", "confirmed", "shipped", "delivered", "cancelled"]
+  min_quantity: 1
+  min_unit_price: 0.0
+  # Reject order_ts more than this many days in the future
+  max_future_days: 1
+  # Late data threshold (days): records older than this are still accepted but flagged
+  late_data_days: 30
+
+# Curation / partitioning
+curation:
+  partition_col: event_date
+  # Deduplication strategy when same (order_id, product_id) appears:
+  # "keep_latest" uses the row with the newest order_ts (then newest ingestion_ts)
+  dedup_strategy: keep_latest
+
+# Pipeline behaviour
+pipeline:
+  # If true, re-running the exact same file content is a no-op for curated
+  enforce_idempotency: true
+  # Write detailed run metrics to JSON
+  write_metrics: true

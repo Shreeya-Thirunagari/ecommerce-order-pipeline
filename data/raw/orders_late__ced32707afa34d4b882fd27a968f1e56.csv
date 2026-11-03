@@ -1,0 +1,6 @@
+order_id,product_id,customer_id,order_ts,quantity,unit_price,currency,status,source_file,ingestion_ts,run_id,_content_hash
+ORD-LATE-1,PRD-20,CUST-100,2024-06-01T08:00:00+00:00,1,10.0,USD,delivered,orders_late.csv,2026-11-03T15:52:13.333343+00:00,ced32707afa34d4b882fd27a968f1e56,c75258f1c4b8cae9da03f22274feca2e991f53e9c8aaae623cda2ceb456c9bd8
+ORD-LATE-2,PRD-21,CUST-101,2024-06-02T08:00:00+00:00,2,13.5,USD,delivered,orders_late.csv,2026-11-03T15:52:13.333343+00:00,ced32707afa34d4b882fd27a968f1e56,c75258f1c4b8cae9da03f22274feca2e991f53e9c8aaae623cda2ceb456c9bd8
+ORD-LATE-3,PRD-22,CUST-102,2024-06-03T08:00:00+00:00,3,17.0,USD,delivered,orders_late.csv,2026-11-03T15:52:13.333343+00:00,ced32707afa34d4b882fd27a968f1e56,c75258f1c4b8cae9da03f22274feca2e991f53e9c8aaae623cda2ceb456c9bd8
+ORD-LATE-4,PRD-23,CUST-103,2024-06-04T08:00:00+00:00,4,20.5,USD,delivered,orders_late.csv,2026-11-03T15:52:13.333343+00:00,ced32707afa34d4b882fd27a968f1e56,c75258f1c4b8cae9da03f22274feca2e991f53e9c8aaae623cda2ceb456c9bd8
+ORD-LATE-5,PRD-24,CUST-104,2024-06-05T08:00:00+00:00,5,24.0,USD,delivered,orders_late.csv,2026-11-03T15:52:13.333343+00:00,ced32707afa34d4b882fd27a968f1e56,c75258f1c4b8cae9da03f22274feca2e991f53e9c8aaae623cda2ceb456c9bd8

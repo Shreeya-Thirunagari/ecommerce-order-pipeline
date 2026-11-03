@@ -1,0 +1,44 @@
+{
+  "paths": {
+    "raw": "data/raw",
+    "validated": "data/validated",
+    "curated": "data/curated",
+    "quarantine": "data/quarantine",
+    "sample": "data/sample",
+    "state": "data/state",
+    "logs": "data/logs"
+  },
+  "ingestion": {
+    "supported_extensions": [
+      ".csv"
+    ],
+    "encoding": "utf-8"
+  },
+  "validation": {
+    "allowed_currencies": [
+      "USD",
+      "EUR",
+      "GBP",
+      "INR"
+    ],
+    "allowed_statuses": [
+      "pending",
+      "confirmed",
+      "shipped",
+      "delivered",
+      "cancelled"
+    ],
+    "min_quantity": 1,
+    "min_unit_price": 0.0,
+    "max_future_days": 1,
+    "late_data_days": 30
+  },
+  "curation": {
+    "partition_col": "event_date",
+    "dedup_strategy": "keep_latest"
+  },
+  "pipeline": {
+    "enforce_idempotency": true,
+    "write_metrics": true
+  }
+}

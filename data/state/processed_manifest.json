@@ -1,0 +1,40 @@
+{
+  "hashes": {
+    "1443b6840727282fc7216af5558a213ea46e37fa427dfd758bd814698a6ca261": {
+      "source_file": "orders_clean.csv",
+      "run_id": "ced32707afa34d4b882fd27a968f1e56",
+      "record_count": 43,
+      "processed_at": "2026-11-03T15:52:13.156919+00:00"
+    },
+    "c75258f1c4b8cae9da03f22274feca2e991f53e9c8aaae623cda2ceb456c9bd8": {
+      "source_file": "orders_late.csv",
+      "run_id": "ced32707afa34d4b882fd27a968f1e56",
+      "record_count": 5,
+      "processed_at": "2026-11-03T15:52:13.999021+00:00"
+    },
+    "6996eb5a6c1d72e7d2d8502f4e4c6b0de724d4a62b81383af4c1ad8a544fde98": {
+      "source_file": "orders_with_issues.csv",
+      "run_id": "ced32707afa34d4b882fd27a968f1e56",
+      "record_count": 9,
+      "processed_at": "2026-11-03T15:52:15.376754+00:00"
+    },
+    "8a81cb24674d17b14069aa7a67a3e2669a37c3e67ee019d1c9c4c6bc896012c0": {
+      "source_file": "orders_clean.csv",
+      "run_id": "1067d229546943eeaa13c9790fcd5018",
+      "record_count": 43,
+      "processed_at": "2026-11-03T16:27:35.735449+00:00"
+    },
+    "2cfba0e7eb4020b916bd418169e02d5f475e8000c9cff2970b12490417fdd7d7": {
+      "source_file": "orders_late.csv",
+      "run_id": "1067d229546943eeaa13c9790fcd5018",
+      "record_count": 5,
+      "processed_at": "2026-11-03T16:27:35.746764+00:00"
+    },
+    "b3d93fc73bf9a1b5ac070eb571edb045d72e56be6e3788972f30b5102072f3d3": {
+      "source_file": "orders_with_issues.csv",
+      "run_id": "1067d229546943eeaa13c9790fcd5018",
+      "record_count": 9,
+      "processed_at": "2026-11-03T16:27:35.761602+00:00"
+    }
+  }
+}

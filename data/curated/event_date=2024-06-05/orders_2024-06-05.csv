@@ -1,0 +1,2 @@
+order_id,product_id,customer_id,order_ts,event_date,quantity,unit_price,currency,status,source_file,ingestion_ts,run_id
+ORD-LATE-5,PRD-24,CUST-104,2024-06-05 08:00:00+00:00,2024-06-05,5,24.0,USD,delivered,orders_late.csv,2026-11-03 16:27:35.738140+00:00,1067d229546943eeaa13c9790fcd5018

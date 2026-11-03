@@ -1,0 +1,29 @@
+{
+  "run_id": "1067d229546943eeaa13c9790fcd5018",
+  "status": "success",
+  "start_ts": "2026-11-03 16:27:35.704630+00:00",
+  "end_ts": "2026-11-03 16:27:35.847872+00:00",
+  "input_files": 3,
+  "input_records": 57,
+  "accepted_records": 49,
+  "rejected_records": 7,
+  "late_records": 50,
+  "duplicate_records": 1,
+  "processed_files": [
+    "orders_clean.csv",
+    "orders_late.csv",
+    "orders_with_issues.csv"
+  ],
+  "skipped_files": [],
+  "failure_reason": null,
+  "rejection_reasons": {
+    "quantity:Input should be a valid integer": 1,
+    "quantity:Input should be greater than or equal to 1": 1,
+    "status:Value error, status must be one of ['cancelled', 'confirmed', 'delivered', 'pending', 'shipped'], got 'refunded'": 1,
+    "currency:Value error, currency must be one of ['EUR', 'GBP', 'INR', 'USD'], got 'XYZ'": 1,
+    "order_ts is too far in the future (>1 days)": 1,
+    "order_id:Input should be a valid string": 1,
+    "unit_price:Input should be a valid decimal": 1
+  },
+  "duration_seconds": 0.143242
+}

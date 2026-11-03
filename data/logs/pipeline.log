@@ -1,0 +1,48 @@
+2026-11-03 15:52:12 | INFO     | __main__ | === Pipeline run started | run_id=ced32707afa34d4b882fd27a968f1e56 ===
+2026-11-03 15:52:12 | INFO     | __main__ | Incoming directory: /home/workdir/artifacts/yottaflex-data-pipeline/data/sample
+2026-11-03 15:52:12 | INFO     | src.ingestion | Landed orders_clean.csv -> orders_clean__ced32707afa34d4b882fd27a968f1e56.csv (43 rows, hash=1443b6840727...)
+2026-11-03 15:52:12 | INFO     | src.validation | Validation for orders_clean.csv: accepted=43, rejected=0
+2026-11-03 15:52:13 | INFO     | src.transformation | Wrote validated file orders_clean__ced32707afa34d4b882fd27a968f1e56_validated.csv (43 rows)
+2026-11-03 15:52:13 | INFO     | src.ingestion | Landed orders_late.csv -> orders_late__ced32707afa34d4b882fd27a968f1e56.csv (5 rows, hash=c75258f1c4b8...)
+2026-11-03 15:52:13 | INFO     | src.validation | Validation for orders_late.csv: accepted=5, rejected=0
+2026-11-03 15:52:13 | INFO     | src.transformation | Wrote validated file orders_late__ced32707afa34d4b882fd27a968f1e56_validated.csv (5 rows)
+2026-11-03 15:52:14 | INFO     | src.ingestion | Landed orders_with_issues.csv -> orders_with_issues__ced32707afa34d4b882fd27a968f1e56.csv (9 rows, hash=6996eb5a6c1d...)
+2026-11-03 15:52:14 | INFO     | src.validation | Validation for orders_with_issues.csv: accepted=2, rejected=7
+2026-11-03 15:52:14 | INFO     | src.transformation | Wrote validated file orders_with_issues__ced32707afa34d4b882fd27a968f1e56_validated.csv (2 rows)
+2026-11-03 15:52:15 | INFO     | src.transformation | Wrote quarantine file orders_with_issues__ced32707afa34d4b882fd27a968f1e56_rejected.csv (7 rows)
+2026-11-03 15:52:15 | INFO     | src.transformation | Removed 1 intra-batch duplicates
+2026-11-03 15:52:16 | INFO     | src.transformation | Wrote new partition 2024-06-01 (1 rows)
+2026-11-03 15:52:17 | INFO     | src.transformation | Wrote new partition 2024-06-02 (1 rows)
+2026-11-03 15:52:17 | INFO     | src.transformation | Wrote new partition 2024-06-03 (1 rows)
+2026-11-03 15:52:18 | INFO     | src.transformation | Wrote new partition 2024-06-04 (1 rows)
+2026-11-03 15:52:19 | INFO     | src.transformation | Wrote new partition 2024-06-05 (1 rows)
+2026-11-03 15:52:20 | INFO     | src.transformation | Wrote new partition 2025-10-15 (13 rows)
+2026-11-03 15:52:20 | INFO     | src.transformation | Wrote new partition 2025-10-16 (11 rows)
+2026-11-03 15:52:21 | INFO     | src.transformation | Wrote new partition 2025-10-17 (14 rows)
+2026-11-03 15:52:22 | INFO     | src.transformation | Wrote new partition 2025-10-18 (6 rows)
+2026-11-03 15:52:22 | INFO     | src.metrics | Run ced32707afa34d4b882fd27a968f1e56 finished | status=success | files=3 | input=57 | accepted=49 | rejected=7 | late=50 | dups=1 | duration=9.41s
+2026-11-03 15:52:22 | INFO     | src.metrics | Rejection breakdown: {'quantity:Input should be a valid integer': 1, 'quantity:Input should be greater than or equal to 1': 1, "status:Value error, status must be one of ['cancelled', 'confirmed', 'delivered', 'pending', 'shipped'], got 'refunded'": 1, "currency:Value error, currency must be one of ['EUR', 'GBP', 'INR', 'USD'], got 'XYZ'": 1, 'order_ts is too far in the future (>1 days)': 1, 'order_id:Input should be a valid string': 1, 'unit_price:Input should be a valid decimal': 1}
+2026-11-03 21:57:35 | INFO     | __main__ | === Pipeline run started | run_id=1067d229546943eeaa13c9790fcd5018 ===
+2026-11-03 21:57:35 | INFO     | __main__ | Incoming directory: C:\Users\ASUS\Downloads\yottaflex-data-pipeline\data\sample
+2026-11-03 21:57:35 | INFO     | src.ingestion | Landed orders_clean.csv -> orders_clean__1067d229546943eeaa13c9790fcd5018.csv (43 rows, hash=8a81cb24674d...)
+2026-11-03 21:57:35 | INFO     | src.validation | Validation for orders_clean.csv: accepted=43, rejected=0
+2026-11-03 21:57:35 | INFO     | src.transformation | Wrote validated file orders_clean__1067d229546943eeaa13c9790fcd5018_validated.csv (43 rows)
+2026-11-03 21:57:35 | INFO     | src.ingestion | Landed orders_late.csv -> orders_late__1067d229546943eeaa13c9790fcd5018.csv (5 rows, hash=2cfba0e7eb40...)
+2026-11-03 21:57:35 | INFO     | src.validation | Validation for orders_late.csv: accepted=5, rejected=0
+2026-11-03 21:57:35 | INFO     | src.transformation | Wrote validated file orders_late__1067d229546943eeaa13c9790fcd5018_validated.csv (5 rows)
+2026-11-03 21:57:35 | INFO     | src.ingestion | Landed orders_with_issues.csv -> orders_with_issues__1067d229546943eeaa13c9790fcd5018.csv (9 rows, hash=b3d93fc73bf9...)
+2026-11-03 21:57:35 | INFO     | src.validation | Validation for orders_with_issues.csv: accepted=2, rejected=7
+2026-11-03 21:57:35 | INFO     | src.transformation | Wrote validated file orders_with_issues__1067d229546943eeaa13c9790fcd5018_validated.csv (2 rows)
+2026-11-03 21:57:35 | INFO     | src.transformation | Wrote quarantine file orders_with_issues__1067d229546943eeaa13c9790fcd5018_rejected.csv (7 rows)
+2026-11-03 21:57:35 | INFO     | src.transformation | Removed 1 intra-batch duplicates
+2026-11-03 21:57:35 | INFO     | src.transformation | Updated partition 2024-06-01 (now 1 rows)
+2026-11-03 21:57:35 | INFO     | src.transformation | Updated partition 2024-06-02 (now 1 rows)
+2026-11-03 21:57:35 | INFO     | src.transformation | Updated partition 2024-06-03 (now 1 rows)
+2026-11-03 21:57:35 | INFO     | src.transformation | Updated partition 2024-06-04 (now 1 rows)
+2026-11-03 21:57:35 | INFO     | src.transformation | Updated partition 2024-06-05 (now 1 rows)
+2026-11-03 21:57:35 | INFO     | src.transformation | Updated partition 2025-10-15 (now 13 rows)
+2026-11-03 21:57:35 | INFO     | src.transformation | Updated partition 2025-10-16 (now 11 rows)
+2026-11-03 21:57:35 | INFO     | src.transformation | Updated partition 2025-10-17 (now 14 rows)
+2026-11-03 21:57:35 | INFO     | src.transformation | Updated partition 2025-10-18 (now 6 rows)
+2026-11-03 21:57:35 | INFO     | src.metrics | Run 1067d229546943eeaa13c9790fcd5018 finished | status=success | files=3 | input=57 | accepted=49 | rejected=7 | late=50 | dups=1 | duration=0.14s
+2026-11-03 21:57:35 | INFO     | src.metrics | Rejection breakdown: {'quantity:Input should be a valid integer': 1, 'quantity:Input should be greater than or equal to 1': 1, "status:Value error, status must be one of ['cancelled', 'confirmed', 'delivered', 'pending', 'shipped'], got 'refunded'": 1, "currency:Value error, currency must be one of ['EUR', 'GBP', 'INR', 'USD'], got 'XYZ'": 1, 'order_ts is too far in the future (>1 days)': 1, 'order_id:Input should be a valid string': 1, 'unit_price:Input should be a valid decimal': 1}
